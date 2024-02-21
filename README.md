@@ -5,7 +5,7 @@ Simple template project for packaged python project with multi module logging
 
 ## Running the sample project:
 To run the project, we will utilize the terminal for now.
-1. Create a conda environment for the project named `log_test` by running `conda create -n log_test` in the terminal. You can also use `venv` for this. 
+1. Create a conda environment for the project named `log_test` by running `conda create -n log_test python=3.11 pip` in the terminal. You can also use `venv` for this. You can use your preferred Python version.
 2. Activate the created environment: `conda activate log_test`
 3. Install your package ("application") by running `pip install -e .` in the root folder. This will use `setup.py` to install your package into the `log_test` environment. By passing the argument `-e`, you install the  project in editable mode (i.e. setuptools "develop mode") from the current directory (`.`). This will result in reflecting any edits you make to the project immediately, without you re-installing the package. 
 4. Create environment variable: `export LOG_FILE_PATH=some_log_file.log`
